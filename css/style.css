@@ -1,0 +1,47 @@
+
+
+#index_website {
+    grid-area: 
+    '' 
+    ;
+    grid-template-columns: repeat();
+    grid-template-rows: repeat();
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    display: inline;
+    float: right;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+  }
+  
+  
+  li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: pink;
+}
+
+
+/*
+#index_website {
+
+}
