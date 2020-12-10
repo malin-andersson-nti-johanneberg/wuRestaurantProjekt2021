@@ -1,13 +1,105 @@
 
-/*
+
 #index_website {
-    grid-area: 
-    '' 
-    ;
-    grid-template-columns: repeat();
-    grid-template-rows: repeat();
+  display: grid;
+  grid-template-areas: 
+  'to'
+  'he'
+  'vi'
+  'em'
+  'bi'
+  'fo'
+  ;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 20% 20% 20% 25% 5%;
+  width: 100vw;
+  height: 200vh;
+  box-sizing: border-box;
 }
 
+
+.top {
+  grid-area: to;
+  background: pink;
+}
+
+.header {
+  grid-area: he;
+  background: lightblue;
+}
+
+.vision {
+  grid-area: vi;
+  background: lightcoral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.div1 {
+  order: 1;
+}
+
+.div2 {
+  order: 2;
+}
+
+.div3 {
+  order: 3;
+}
+
+.div4 {
+  order: 4;
+}
+
+.empty {
+  grid-area: em;
+  background: lightgray;
+}
+
+.bildgalleri {
+  grid-area: bi;
+  background: lightgreen;
+}
+
+.footer {
+  grid-area: fo;
+  background: lightyellow;
+}
+
+.navbar {
+  width: 90%;
+  padding-top: 0px;
+  float: right;
+  border: 1px solid white;
+}
+
+
+
+
+#boka_hemsidan {
+  display: grid;
+  grid-template-areas:
+  'se'
+  'he'
+  'ch'
+  'ba'
+  'bi'
+  'fo'
+  ;
+  grid-template-columns: 100% ;
+  grid-auto-rows: 10% 20% 20% 5% 40% 5%;
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+/*
 ul {
     list-style-type: none;
     margin: 0;
@@ -15,9 +107,10 @@ ul {
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
   }
-  
+
+
   li {
     display: inline;
     float: right;
@@ -40,8 +133,3 @@ ul {
     background-color: pink;
 }
 
-
-/*
-#index_website {
-
-}
