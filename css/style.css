@@ -1,31 +1,31 @@
-
-
-#index_website {
-  display: grid;
-  grid-template-areas: 
-  'to'
-  'he'
-  'vi'
-  'em'
-  'bi'
-  'fo'
-  ;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 20% 20% 20% 25% 5%;
-  width: 100vw;
-  height: 200vh;
+* {
   box-sizing: border-box;
 }
 
+#index_website {
+  display: grid;
+  grid-template-areas: 'to' 'he' 'vi' 'em' 'bi' 'fo';
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 20% 20% 10% 35% 5%;
+  width: 100vw;
+  height: 200vh;
+}
 
 .top {
   grid-area: to;
   background: pink;
+  display: flex;
 }
 
 .header {
   grid-area: he;
-  background: lightblue;
+}
+
+.background_image_for_header_of_index {
+  height: 100%;
+  width: 100%;
+  background: url("../misc/bilder/pig_cupcakes.jpg") center/cover no-repeat fixed;
+  margin-top: auto;
 }
 
 .vision {
@@ -36,22 +36,6 @@
   justify-content: space-between;
 }
 
-.div1 {
-  order: 1;
-}
-
-.div2 {
-  order: 2;
-}
-
-.div3 {
-  order: 3;
-}
-
-.div4 {
-  order: 4;
-}
-
 .empty {
   grid-area: em;
   background: lightgray;
@@ -60,9 +44,14 @@
 .bildgalleri {
   grid-area: bi;
   background: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer {
+footer {
   grid-area: fo;
   background: lightyellow;
 }
@@ -74,39 +63,80 @@
   border: 1px solid white;
 }
 
-
-
-
 #boka_hemsidan {
   display: grid;
-  grid-template-areas:
-  'se'
-  'he'
-  'ch'
-  'ba'
-  'bi'
-  'fo'
-  ;
-  grid-template-columns: 100% ;
+  grid-template-areas: 'se' 'he' 'ch' 'ba' 'bi' 'fo';
+  grid-template-columns: 100%;
   grid-auto-rows: 10% 20% 20% 5% 40% 5%;
-  width: 100px;
-  height: 200px;
-  box-sizing: border-box;
+  width: 100vw;
+  height: 200vh;
+}
+
+.search {
+  grid-area: se;
+  background: pink;
+}
+
+.header_for_boka {
+  grid-area: he;
+  background: lightgray;
+}
+
+.choose {
+  grid-area: ch;
+  background: lightseagreen;
+}
+
+.background {
+  grid-area: ba;
+  background: linen;
+}
+
+.bilder {
+  grid-area: bi;
+  background: plum;
+}
+
+#om_oss_hemsidan {
+  display: grid;
+  grid-template-areas: 'ea' 'he' 'ar' 'im' 'te' 'fo';
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 20% 20% 5% 40% 5%;
+  width: 100vw;
+  height: 200vh;
+}
+
+.easily_found {
+  grid-area: ea;
+  background: cadetblue;
+}
+
+.header_for_om_oss {
+  grid-area: he;
+  background: darkseagreen;
+}
+
+.article {
+  grid-area: ar;
+  background: orange;
+}
+
+.image {
+  grid-area: im;
+  background: silver;
+}
+
+.text_section {
+  grid-area: te;
+  background: rosybrown;
 }
 
 
-
-
-
-
-/*
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #333;
-    position: fixed;
-    top: 0;
     width: 80%;
   }
 
@@ -132,4 +162,3 @@ ul {
 .active {
     background-color: pink;
 }
-
