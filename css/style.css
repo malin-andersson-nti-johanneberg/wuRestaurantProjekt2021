@@ -24,16 +24,36 @@
 .background_image_for_header_of_index {
   height: 100%;
   width: 100%;
-  background: url("../misc/bilder/pig_cupcakes.jpg") center/cover no-repeat fixed;
+  background: url("../img/pig_cupcakes.jpg") center/cover no-repeat fixed;
   margin-top: auto;
+}
+
+.text_to_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5px;
 }
 
 .vision {
   grid-area: vi;
   background: lightcoral;
+}
+
+.vision_texts {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our_vision {
+  text-align: center;
+}
+
+.info {
+  margin: 30px 0;
+  flex: 0 0 calc(25% - 16px);
 }
 
 .empty {
@@ -101,7 +121,7 @@ footer {
   display: grid;
   grid-template-areas: 'ea' 'he' 'ar' 'im' 'te' 'fo';
   grid-template-columns: 100%;
-  grid-template-rows: 10% 20% 20% 5% 40% 5%;
+  grid-template-rows: 10% 20% 30% 15% 20% 5%;
   width: 100vw;
   height: 200vh;
 }
@@ -113,12 +133,32 @@ footer {
 
 .header_for_om_oss {
   grid-area: he;
-  background: darkseagreen;
 }
 
 .article {
   grid-area: ar;
-  background: orange;
+}
+
+.container_for_koncept_texts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inner_koncept_div {
+  flex: 0 0 calc(33% - 16px);
+  width: 40vw;
+  height: 40vh;
+  padding: 0 20px 20px;
+}
+
+.title_text_to_konceptet {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .image {
@@ -129,14 +169,27 @@ footer {
 .text_section {
   grid-area: te;
   background: rosybrown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.inner_div_to_text_section {
+  flex: 0 0 calc(33% - 16px);
+}
+
+.background_image_for_om_oss{
+  height: 100%;
+  width: 100%;
+  background: url("../img/pink_lollipops.jpg") center/cover no-repeat fixed;
+  margin: auto;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: transparent;
     width: 80%;
   }
 
