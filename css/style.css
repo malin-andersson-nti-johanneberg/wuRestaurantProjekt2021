@@ -26,17 +26,18 @@
 .background_image_for_header_of_index {
   height: 100%;
   width: 100%;
-  background: url("../img/pig_cupcakes.jpg") center/cover no-repeat fixed;
+  background: url("../img/paper_hearts.jpg") center/cover no-repeat fixed;
   margin-top: auto;
 }
 
 .text_to_header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  line-height: 40px;
-  padding-top: 60px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
 }
 
 .vision {
@@ -61,12 +62,11 @@
 
 .empty {
   grid-area: em;
-  background: url("../img/pig_cupcakes.jpg") bottom/cover no-repeat fixed;
+  background: url("../img/paper_hearts.jpg") bottom/cover no-repeat fixed;
 }
 
 .bildgalleri {
   grid-area: bi;
-  background: lightgreen;
   display: flex;
   flex-direction: row;
 }
@@ -105,12 +105,16 @@ footer {
 
 .header_for_boka {
   grid-area: he;
-  background: url("../img/cafe_table.jpg") center/cover no-repeat fixed;
+  background: url("../img/outside_tables.jpg") bottom/cover no-repeat fixed;
+  position: relative;
 }
 
 .title_for_boka {
-  text-align: center;
-  padding-top: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
 }
 
 .choose_box {
@@ -124,6 +128,43 @@ footer {
 .choose {
   grid-area: ch;
   display: flex;
+}
+
+.bild_till_boka_bord {
+  text-align: center;
+  position: relative;
+}
+
+.boka_bord_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.bild_till_bestall_hem {
+  position: relative;
+  text-align: center;
+}
+
+.bestall_hem_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bild_till_anordna_fest_kalas {
+  position: relative;
+  text-align: center;
+}
+
+.anordna_fest_kalas_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .background {
@@ -165,8 +206,9 @@ footer {
   grid-area: he;
 }
 
-.article {
+.article_for_om_oss {
   grid-area: ar;
+  background: pink;
 }
 
 .container_for_koncept_texts {
@@ -193,7 +235,7 @@ img {
 
 .image {
   grid-area: im;
-  background: url("../img/pink_lollipops.jpg") bottom/cover no-repeat fixed;
+  background: url("../img/ank_godis.jpg") bottom/cover no-repeat fixed;
 }
 
 .text_section {
@@ -201,6 +243,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: pink;
 }
 
 .inner_div_to_text_section {
@@ -210,7 +253,7 @@ img {
 .background_image_for_om_oss {
   height: 100%;
   width: 100%;
-  background: url("../img/pink_lollipops.jpg") center/cover no-repeat fixed;
+  background: url("../img/ank_godis.jpg") center/cover no-repeat fixed;
 }
 
 nav {
@@ -230,20 +273,19 @@ ul {
 li {
   display: inline;
   float: right;
-  border-right: 1px solid #bbb;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 20px 25px;
 }
 
 li a:hover {
-  background-color: palevioletred;
+  background-color: white;
 }
 
 .active {
-  background-color: palevioletred;
+  background-color: white;
 }
