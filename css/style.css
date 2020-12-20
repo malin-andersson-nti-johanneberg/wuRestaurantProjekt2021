@@ -26,7 +26,7 @@
 .background_image_for_header_of_index {
   height: 100%;
   width: 100%;
-  background: url("../img/paper_hearts.jpg") center/cover no-repeat fixed;
+  background: url("../img/paper_hearts_optimerad.jpg") center/cover no-repeat fixed;
   margin-top: auto;
 }
 
@@ -43,7 +43,7 @@
 .vision {
   grid-area: vi;
   background: lightpink;
-  padding-top: 40px;
+  padding: 40px 20px 20px;
 }
 
 .vision_texts {
@@ -62,7 +62,7 @@
 
 .empty {
   grid-area: em;
-  background: url("../img/paper_hearts.jpg") bottom/cover no-repeat fixed;
+  background: url("../img/paper_hearts_optimerad.jpg") bottom/cover no-repeat fixed;
 }
 
 .bildgalleri {
@@ -105,13 +105,18 @@ footer {
 
 .header_for_boka {
   grid-area: he;
-  background: url("../img/outside_tables.jpg") bottom/cover no-repeat fixed;
-  position: relative;
+}
+
+.inner_div_to_header_for_boka {
+  background: url("../img/outside_tables_optimerad.jpg") bottom/cover no-repeat fixed;
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .title_for_boka {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
@@ -153,6 +158,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: white;
 }
 
 .bild_till_anordna_fest_kalas {
@@ -165,6 +171,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: white;
 }
 
 .background {
@@ -215,17 +222,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 40px 20px 20px;
 }
 
 .inner_koncept_div {
   flex: 0 0 calc(33% - 16px);
   width: 40vw;
   height: 40vh;
-  padding: 0 20px 20px;
 }
 
 .title_text_to_konceptet {
   text-align: center;
+  padding-top: 40px;
 }
 
 img {
@@ -235,7 +243,7 @@ img {
 
 .image {
   grid-area: im;
-  background: url("../img/ank_godis.jpg") bottom/cover no-repeat fixed;
+  background: url("../img/ank_godis_optimerad.jpg") bottom/cover no-repeat fixed;
 }
 
 .text_section {
@@ -244,6 +252,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: pink;
+  padding: 40px 20px 20px;
 }
 
 .inner_div_to_text_section {
@@ -253,7 +262,7 @@ img {
 .background_image_for_om_oss {
   height: 100%;
   width: 100%;
-  background: url("../img/ank_godis.jpg") center/cover no-repeat fixed;
+  background: url("../img/ank_godis_optimerad.jpg") center/cover no-repeat fixed;
 }
 
 nav {
@@ -288,4 +297,16 @@ li a:hover {
 
 .active {
   background-color: white;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  float: left;
+  height: 200px;
+  margin-left: 40px;
+}
+
+img:hover {
+  opacity: .5;
 }
